@@ -1,0 +1,7 @@
+2026-03-12T03:05:31.719Z [INFO] [MavenBuildTool] Getting build errors of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:05:31.720Z [INFO] [Environment] Running command (Java 17): mvn clean test-compile -q -B -fn
+2026-03-12T03:05:37.159Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-03-12T03:05:37.159Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-03-12T03:05:37.161Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-12T03:05:37.162Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:05:37.162Z [INFO] [Environment] Running command (Java 17): mvn clean -q -B -fn

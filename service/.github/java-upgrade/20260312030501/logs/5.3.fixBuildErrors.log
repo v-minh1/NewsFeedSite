@@ -1,0 +1,10 @@
+2026-03-12T03:10:58.304Z [INFO] [Task.commitChanges](5.3): Committing changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: Fix build: add jakarta.websocket-client-api:2.2.0 for Session and annotation classes
+2026-03-12T03:10:58.324Z [INFO] [copilot/execute-modernization-plan 3f4dbef] Fix build: add jakarta.websocket-client-api:2.2.0 for Session and annotation classes
+ 1 file changed, 6 insertions(+)
+
+2026-03-12T03:10:58.331Z [INFO] 3f4dbef9979c042f1d41332f816e96a8cb8b519d
+
+2026-03-12T03:10:58.341Z [INFO] 4	4	client/pom.xml
+6	0	service/pom.xml
+
+2026-03-12T03:10:58.348Z [INFO] [Task.commitChanges](5.3): Committed changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: Fix build: add jakarta.websocket-client-api:2.2.0 for Session and annotation classes
