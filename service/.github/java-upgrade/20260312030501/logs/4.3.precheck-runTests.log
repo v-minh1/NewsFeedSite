@@ -1,0 +1,6 @@
+2026-03-12T03:05:38.694Z [INFO] [MavenBuildTool] Running test cases of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:05:38.694Z [INFO] [Environment] Running command (Java 17): mvn clean test -q -B -fn
+2026-03-12T03:05:42.630Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-03-12T03:05:42.640Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-03-12T03:05:42.640Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:05:42.640Z [INFO] [Environment] Running command (Java 17): mvn clean -q -B -fn

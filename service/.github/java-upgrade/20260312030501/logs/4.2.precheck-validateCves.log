@@ -1,0 +1,25 @@
+2026-03-12T03:05:38.541Z [INFO] getting CVEs for dependencies:
+ - junit:junit:4.11
+  - com.rabbitmq:amqp-client:5.16.0
+  - javax.websocket:javax.websocket-api:1.1
+  - javax.servlet:javax.servlet-api:3.1.0
+  - com.google.code.gson:gson:2.8.9
+  - java:*:17...
+2026-03-12T03:05:38.541Z [INFO] getting gitHub access token...
+2026-03-12T03:05:38.541Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-03-12T03:05:38.541Z [INFO] Processing batch 1/1, size: 6
+2026-03-12T03:05:38.542Z [INFO] listing CVEs from GitHub for dependencies [
+  "junit:junit:4.11",
+  "com.rabbitmq:amqp-client:5.16.0",
+  "javax.websocket:javax.websocket-api:1.1",
+  "javax.servlet:javax.servlet-api:3.1.0",
+  "com.google.code.gson:gson:2.8.9",
+  "java:*:17"
+]
+2026-03-12T03:05:38.689Z [INFO] Fetched 2 total advisories across all pages
+2026-03-12T03:05:38.689Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-12T03:05:38.689Z [INFO] done getting 2 CVEs for 6 dependencies
+2026-03-12T03:05:38.690Z [INFO] calculating patched version by dep...
+2026-03-12T03:05:38.690Z [INFO] CVE CVE-2020-15250 for junit:junit:4.11: patched version 4.13.1
+2026-03-12T03:05:38.690Z [INFO] CVE CVE-2023-46120 for com.rabbitmq:amqp-client:5.16.0: patched version 5.18.0
+2026-03-12T03:05:38.690Z [INFO] finished getting CVEs for dependencies.

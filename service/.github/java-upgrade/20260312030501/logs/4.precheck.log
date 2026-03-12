@@ -1,0 +1,83 @@
+2026-03-12T03:05:31.719Z [INFO] Prechecking project service...
+2026-03-12T03:05:31.719Z [INFO] Prechecking build status...
+2026-03-12T03:05:38.540Z [INFO] Prechecking CVEs...
+2026-03-12T03:05:38.693Z [INFO] Prechecking tests...
+2026-03-12T03:05:38.693Z [INFO] Run tests before upgrading...
+2026-03-12T03:05:44.070Z [INFO] Prepare initial state...
+2026-03-12T03:05:44.070Z [INFO] [Project service]: getting project state.
+2026-03-12T03:05:44.070Z [INFO] [Project service]: getting Java version.
+2026-03-12T03:05:44.070Z [INFO] [Project service]: got Java version: 17
+2026-03-12T03:05:44.070Z [INFO] [Project service]: getting dependencies promise.
+2026-03-12T03:05:44.070Z [INFO] Project initial state: {
+  "javaVersion": "17",
+  "dependencies": [
+    {
+      "groupId": "junit",
+      "artifactId": "junit",
+      "type": "jar",
+      "version": "4.11",
+      "scope": "test",
+      "module": "demo"
+    },
+    {
+      "groupId": "com.rabbitmq",
+      "artifactId": "amqp-client",
+      "type": "jar",
+      "version": "5.16.0",
+      "scope": "compile",
+      "module": "demo"
+    },
+    {
+      "groupId": "javax.websocket",
+      "artifactId": "javax.websocket-api",
+      "type": "jar",
+      "version": "1.1",
+      "scope": "provided",
+      "module": "demo"
+    },
+    {
+      "groupId": "javax.servlet",
+      "artifactId": "javax.servlet-api",
+      "type": "jar",
+      "version": "3.1.0",
+      "scope": "provided",
+      "module": "demo"
+    },
+    {
+      "groupId": "com.google.code.gson",
+      "artifactId": "gson",
+      "type": "jar",
+      "version": "2.8.9",
+      "scope": "compile",
+      "module": "demo"
+    },
+    {
+      "groupId": "java",
+      "artifactId": "*",
+      "version": "17"
+    }
+  ],
+  "buildResult": {
+    "numOfJavaFiles": 2,
+    "numOfClassFiles": 2,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 2,
+        "numOfClassFiles": 2
+      }
+    },
+    "errors": [],
+    "command": "mvn clean test-compile -q -B -fn"
+  },
+  "testResult": {
+    "errors": [],
+    "failures": [],
+    "summary": {
+      "tests": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "reports": []
+  }
+}

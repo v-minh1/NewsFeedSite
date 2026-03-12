@@ -1,0 +1,23 @@
+2026-03-12T03:11:08.130Z [INFO] Some dependencies have been modified or added during the upgrade. start validating CVEs.
+2026-03-12T03:11:08.135Z [INFO] Getting CVEs for dependencies: jakarta.websocket:jakarta.websocket-client-api:2.2.0:jar,jakarta.websocket:jakarta.websocket-api:2.2.0:jar,jakarta.servlet:jakarta.servlet-api:6.1.0:jar,java:*:21
+2026-03-12T03:11:08.135Z [INFO] getting CVEs for dependencies:
+ - jakarta.websocket:jakarta.websocket-client-api:2.2.0:jar
+  - jakarta.websocket:jakarta.websocket-api:2.2.0:jar
+  - jakarta.servlet:jakarta.servlet-api:6.1.0:jar
+  - java:*:21...
+2026-03-12T03:11:08.135Z [INFO] getting gitHub access token...
+2026-03-12T03:11:08.136Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-03-12T03:11:08.136Z [INFO] Processing batch 1/1, size: 4
+2026-03-12T03:11:08.136Z [INFO] listing CVEs from GitHub for dependencies [
+  "jakarta.websocket:jakarta.websocket-client-api:2.2.0:jar",
+  "jakarta.websocket:jakarta.websocket-api:2.2.0:jar",
+  "jakarta.servlet:jakarta.servlet-api:6.1.0:jar",
+  "java:*:21"
+]
+2026-03-12T03:11:08.181Z [INFO] Fetched 0 total advisories across all pages
+2026-03-12T03:11:08.181Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-12T03:11:08.181Z [INFO] done getting 0 CVEs for 4 dependencies
+2026-03-12T03:11:08.181Z [INFO] calculating patched version by dep...
+2026-03-12T03:11:08.181Z [INFO] finished getting CVEs for dependencies.
+2026-03-12T03:11:08.181Z [INFO] Found 0 dependencies with known CVEs
+2026-03-12T03:11:08.181Z [INFO] No known CVEs that need to be fixed are found for dependencies: jakarta.websocket:jakarta.websocket-client-api:2.2.0:jar,jakarta.websocket:jakarta.websocket-api:2.2.0:jar,jakarta.servlet:jakarta.servlet-api:6.1.0:jar,java:*:21

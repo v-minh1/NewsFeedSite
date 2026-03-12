@@ -1,0 +1,536 @@
+2026-03-12T03:11:38.253Z [INFO] [Project service]: getting Java version.
+2026-03-12T03:11:38.254Z [INFO] [Project service]: got Java version: 21
+2026-03-12T03:11:38.254Z [INFO] [Project service]: getting project state.
+2026-03-12T03:11:38.254Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-03-12T03:11:38.254Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: /usr/share/apache-maven-3.9.12
+Java version: 21.0.10, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-21-jdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.14.0-1017-azure", arch: "amd64", family: "unix"
+2026-03-12T03:11:38.483Z [INFO] [BaseBuildTool] New version of mvn: 3.9.12 -> 3.9.12
+2026-03-12T03:11:38.483Z [INFO] [MavenBuildTool] Getting Java version of /home/runner/work/NewsFeedSite/NewsFeedSite/service from pom.xml
+2026-03-12T03:11:38.483Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/runner/work/NewsFeedSite/NewsFeedSite/service
+2026-03-12T03:11:38.483Z [INFO] [MavenBuildTool] Found pom.xml files: /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml
+2026-03-12T03:11:38.483Z [INFO] [MavenBuildTool] Java version found in /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml: 21
+2026-03-12T03:11:38.483Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-03-12T03:11:38.483Z [INFO] [Project service]: getting Java version.
+2026-03-12T03:11:38.483Z [INFO] [Project service]: got Java version: 21
+2026-03-12T03:11:38.483Z [INFO] [Project service]: getting dependencies promise.
+2026-03-12T03:11:38.483Z [INFO] [Project service]: reset dependencies promise.
+2026-03-12T03:11:38.483Z [INFO] [Environment] Running command (Java 21): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo Maven Webapp 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ demo ---
+[INFO] com.example:demo:war:1.0
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- com.rabbitmq:amqp-client:jar:5.16.0:compile
+[INFO] |  \- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] +- jakarta.websocket:jakarta.websocket-client-api:jar:2.2.0:provided
+[INFO] +- jakarta.websocket:jakarta.websocket-api:jar:2.2.0:provided
+[INFO] +- jakarta.servlet:jakarta.servlet-api:jar:6.1.0:provided
+[INFO] \- com.google.code.gson:gson:jar:2.8.9:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.868 s
+[INFO] Finished at: 2026-03-12T03:11:40Z
+[INFO] ------------------------------------------------------------------------
+2026-03-12T03:11:40.515Z [INFO] [MavenBuildTool] Successfully got dependency tree of /home/runner/work/NewsFeedSite/NewsFeedSite/service
+2026-03-12T03:11:40.515Z [INFO] [MavenBuildTool] Getting Java version of /home/runner/work/NewsFeedSite/NewsFeedSite/service from pom.xml
+2026-03-12T03:11:40.515Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/runner/work/NewsFeedSite/NewsFeedSite/service
+2026-03-12T03:11:40.516Z [INFO] [MavenBuildTool] Found pom.xml files: /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml
+2026-03-12T03:11:40.516Z [INFO] [MavenBuildTool] Java version found in /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml: 21
+2026-03-12T03:11:40.516Z [INFO] [MavenBuildTool] Getting build errors of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:40.516Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+2026-03-12T03:11:42.928Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-03-12T03:11:42.929Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-03-12T03:11:42.930Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-12T03:11:42.930Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:42.930Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-03-12T03:11:44.363Z [INFO] [MavenBuildTool] Running test cases of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:44.363Z [INFO] [Environment] Running command (Java 21): mvn clean test -q -B -fn
+2026-03-12T03:11:46.920Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-03-12T03:11:46.923Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-03-12T03:11:46.924Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:46.924Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-03-12T03:11:48.344Z [INFO] Add test changes to summary...
+2026-03-12T03:11:48.360Z [INFO] 19	13	service/pom.xml
+88	88	service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
+56	56	service/src/main/java/com/example/websocket/NewsWebSocket.java
+3	4	service/src/main/webapp/WEB-INF/web.xml
+
+2026-03-12T03:11:48.361Z [INFO] Add test errors to summary...
+2026-03-12T03:11:48.361Z [INFO] getting CVEs for dependencies:
+ - junit:junit:4.11
+  - com.rabbitmq:amqp-client:5.16.0
+  - jakarta.websocket:jakarta.websocket-client-api:2.2.0
+  - jakarta.websocket:jakarta.websocket-api:2.2.0
+  - jakarta.servlet:jakarta.servlet-api:6.1.0
+  - com.google.code.gson:gson:2.8.9
+  - java:*:21...
+2026-03-12T03:11:48.361Z [INFO] getting gitHub access token...
+2026-03-12T03:11:48.361Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-03-12T03:11:48.361Z [INFO] Processing batch 1/1, size: 7
+2026-03-12T03:11:48.361Z [INFO] listing CVEs from GitHub for dependencies [
+  "junit:junit:4.11",
+  "com.rabbitmq:amqp-client:5.16.0",
+  "jakarta.websocket:jakarta.websocket-client-api:2.2.0",
+  "jakarta.websocket:jakarta.websocket-api:2.2.0",
+  "jakarta.servlet:jakarta.servlet-api:6.1.0",
+  "com.google.code.gson:gson:2.8.9",
+  "java:*:21"
+]
+2026-03-12T03:11:48.480Z [INFO] Fetched 2 total advisories across all pages
+2026-03-12T03:11:48.480Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-12T03:11:48.480Z [INFO] done getting 2 CVEs for 7 dependencies
+2026-03-12T03:11:48.480Z [INFO] calculating patched version by dep...
+2026-03-12T03:11:48.480Z [INFO] CVE CVE-2020-15250 for junit:junit:4.11: patched version 4.13.1
+2026-03-12T03:11:48.480Z [INFO] CVE CVE-2023-46120 for com.rabbitmq:amqp-client:5.16.0: patched version 5.18.0
+2026-03-12T03:11:48.480Z [INFO] finished getting CVEs for dependencies.
+2026-03-12T03:11:48.490Z [INFO] diff --git a/client/pom.xml b/client/pom.xml
+index 23cdc00..6447e21 100644
+--- a/client/pom.xml
++++ b/client/pom.xml
+@@ -14,8 +14,8 @@
+ 
+   <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    <maven.compiler.source>17</maven.compiler.source>
+-    <maven.compiler.target>17</maven.compiler.target>
++    <maven.compiler.source>21</maven.compiler.source>
++    <maven.compiler.target>21</maven.compiler.target>
+   </properties>
+ 
+   <dependencies>
+@@ -49,11 +49,11 @@
+         </plugin>
+         <plugin>
+           <artifactId>maven-compiler-plugin</artifactId>
+-          <version>3.8.0</version>
++          <version>3.13.0</version>
+         </plugin>
+         <plugin>
+           <artifactId>maven-surefire-plugin</artifactId>
+-          <version>2.22.1</version>
++          <version>3.2.5</version>
+         </plugin>
+         <plugin>
+           <artifactId>maven-jar-plugin</artifactId>
+diff --git a/service/pom.xml b/service/pom.xml
+index 28f62af..966d6be 100644
+--- a/service/pom.xml
++++ b/service/pom.xml
+@@ -15,8 +15,8 @@
+ 
+   <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    <maven.compiler.source>17</maven.compiler.source>
+-    <maven.compiler.target>17</maven.compiler.target>
++    <maven.compiler.source>21</maven.compiler.source>
++    <maven.compiler.target>21</maven.compiler.target>
+   </properties>
+ 
+   <dependencies>
+@@ -36,17 +36,23 @@
+     
+     <!-- WebSocket API -->
+     <dependency>
+-      <groupId>javax.websocket</groupId>
+-      <artifactId>javax.websocket-api</artifactId>
+-      <version>1.1</version>
++      <groupId>jakarta.websocket</groupId>
++      <artifactId>jakarta.websocket-client-api</artifactId>
++      <version>2.2.0</version>
++      <scope>provided</scope>
++    </dependency>
++    <dependency>
++      <groupId>jakarta.websocket</groupId>
++      <artifactId>jakarta.websocket-api</artifactId>
++      <version>2.2.0</version>
+       <scope>provided</scope>
+     </dependency>
+     
+     <!-- Servlet API -->
+     <dependency>
+-      <groupId>javax.servlet</groupId>
+-      <artifactId>javax.servlet-api</artifactId>
+-      <version>3.1.0</version>
++      <groupId>jakarta.servlet</groupId>
++      <artifactId>jakarta.servlet-api</artifactId>
++      <version>6.1.0</version>
+       <scope>provided</scope>
+     </dependency>
+     
+@@ -77,7 +83,7 @@
+         </plugin>
+         <plugin>
+           <artifactId>maven-surefire-plugin</artifactId>
+-          <version>2.22.1</version>
++          <version>3.2.5</version>
+         </plugin>
+         <plugin>
+           <artifactId>maven-war-plugin</artifactId>
+@@ -95,9 +101,9 @@
+     </pluginManagement>
+     <plugins>
+       <plugin>
+-        <groupId>org.eclipse.jetty</groupId>
+-        <artifactId>jetty-maven-plugin</artifactId>
+-        <version>9.4.48.v20220622</version>
++        <groupId>org.eclipse.jetty.ee10</groupId>
++        <artifactId>jetty-ee10-maven-plugin</artifactId>
++        <version>12.0.21</version>
+         <configuration>
+           <httpConnector>
+             <port>8080</port>
+@@ -105,7 +111,7 @@
+           <webApp>
+             <contextPath>/demo</contextPath>
+           </webApp>
+-          <scanIntervalSeconds>10</scanIntervalSeconds>
++          <scan>10</scan>
+         </configuration>
+       </plugin>
+     </plugins>
+diff --git a/service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java b/service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
+index 077b9e1..3db2348 100644
+--- a/service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
++++ b/service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
+@@ -1,88 +1,88 @@
+-package com.example.rabbitmq;
+-
+-import com.rabbitmq.client.*;
+-import com.example.websocket.NewsWebSocket;
+-import javax.servlet.ServletContextEvent;
+-import javax.servlet.ServletContextListener;
+-import javax.servlet.annotation.WebListener;
+-import java.io.IOException;
+-import java.util.concurrent.TimeoutException;
+-
+-@WebListener
+-public class RabbitMQConsumer implements ServletContextListener {
+-    
+-    private static final String RABBITMQ_HOST = "localhost";
+-    private static final String QUEUE_NAME = "news";
+-    private Connection connection;
+-    private Channel channel;
+-    
+-    @Override
+-    public void contextInitialized(ServletContextEvent sce) {
+-        System.out.println("========================================");
+-        System.out.println("RabbitMQConsumer: Starting initialization...");
+-        System.out.println("========================================");
+-        try {
+-            // Create connection to RabbitMQ
+-            ConnectionFactory factory = new ConnectionFactory();
+-            factory.setHost(RABBITMQ_HOST);
+-            // Optional: Set username and password if required
+-            // factory.setUsername("guest");
+-            // factory.setPassword("guest");
+-            
+-            System.out.println("Connecting to RabbitMQ at " + RABBITMQ_HOST + "...");
+-            connection = factory.newConnection();
+-            channel = connection.createChannel();
+-            System.out.println("✓ Connected to RabbitMQ successfully!");
+-            
+-            // Declare queue (idempotent)
+-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+-            System.out.println("✓ Queue '" + QUEUE_NAME + "' declared");
+-            
+-            System.out.println("✓ Waiting for messages from RabbitMQ queue: " + QUEUE_NAME);
+-            System.out.println("========================================");
+-            
+-            // Set up consumer
+-            DeliverCallback deliverCallback = (consumerTag, delivery) -> {
+-                String message = new String(delivery.getBody(), "UTF-8");
+-                System.out.println("========================================");
+-                System.out.println(">>> Received from RabbitMQ: " + message);
+-                
+-                // Broadcast to all connected WebSocket clients
+-                try {
+-                    NewsWebSocket.broadcast(message);
+-                    System.out.println(">>> Broadcasted to WebSocket clients");
+-                } catch (Exception e) {
+-                    System.err.println(">>> ERROR broadcasting to WebSocket: " + e.getMessage());
+-                    e.printStackTrace();
+-                }
+-                System.out.println("========================================");
+-            };
+-            
+-            channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
+-            
+-        } catch (IOException | TimeoutException e) {
+-            System.err.println("========================================");
+-            System.err.println("ERROR: Failed to connect to RabbitMQ!");
+-            System.err.println("========================================");
+-            e.printStackTrace();
+-            System.err.println("Error connecting to RabbitMQ: " + e.getMessage());
+-            System.err.println("Make sure RabbitMQ is running: docker ps");
+-            System.err.println("========================================");
+-        }
+-    }
+-    
+-    @Override
+-    public void contextDestroyed(ServletContextEvent sce) {
+-        try {
+-            if (channel != null && channel.isOpen()) {
+-                channel.close();
+-            }
+-            if (connection != null && connection.isOpen()) {
+-                connection.close();
+-            }
+-            System.out.println("RabbitMQ connection closed");
+-        } catch (IOException | TimeoutException e) {
+-            e.printStackTrace();
+-        }
+-    }
+-}
++package com.example.rabbitmq;
++
++import com.rabbitmq.client.*;
++import com.example.websocket.NewsWebSocket;
++import jakarta.servlet.ServletContextEvent;
++import jakarta.servlet.ServletContextListener;
++import jakarta.servlet.annotation.WebListener;
++import java.io.IOException;
++import java.util.concurrent.TimeoutException;
++
++@WebListener
++public class RabbitMQConsumer implements
+2026-03-12T03:11:48.490Z [INFO]  ServletContextListener {
++    
++    private static final String RABBITMQ_HOST = "localhost";
++    private static final String QUEUE_NAME = "news";
++    private Connection connection;
++    private Channel channel;
++    
++    @Override
++    public void contextInitialized(ServletContextEvent sce) {
++        System.out.println("========================================");
++        System.out.println("RabbitMQConsumer: Starting initialization...");
++        System.out.println("========================================");
++        try {
++            // Create connection to RabbitMQ
++            ConnectionFactory factory = new ConnectionFactory();
++            factory.setHost(RABBITMQ_HOST);
++            // Optional: Set username and password if required
++            // factory.setUsername("guest");
++            // factory.setPassword("guest");
++            
++            System.out.println("Connecting to RabbitMQ at " + RABBITMQ_HOST + "...");
++            connection = factory.newConnection();
++            channel = connection.createChannel();
++            System.out.println("✓ Connected to RabbitMQ successfully!");
++            
++            // Declare queue (idempotent)
++            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
++            System.out.println("✓ Queue '" + QUEUE_NAME + "' declared");
++            
++            System.out.println("✓ Waiting for messages from RabbitMQ queue: " + QUEUE_NAME);
++            System.out.println("========================================");
++            
++            // Set up consumer
++            DeliverCallback deliverCallback = (consumerTag, delivery) -> {
++                String message = new String(delivery.getBody(), "UTF-8");
++                System.out.println("========================================");
++                System.out.println(">>> Received from RabbitMQ: " + message);
++                
++                // Broadcast to all connected WebSocket clients
++                try {
++                    NewsWebSocket.broadcast(message);
++                    System.out.println(">>> Broadcasted to WebSocket clients");
++                } catch (Exception e) {
++                    System.err.println(">>> ERROR broadcasting to WebSocket: " + e.getMessage());
++                    e.printStackTrace();
++                }
++                System.out.println("========================================");
++            };
++            
++            channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
++            
++        } catch (IOException | TimeoutException e) {
++            System.err.println("========================================");
++            System.err.println("ERROR: Failed to connect to RabbitMQ!");
++            System.err.println("========================================");
++            e.printStackTrace();
++            System.err.println("Error connecting to RabbitMQ: " + e.getMessage());
++            System.err.println("Make sure RabbitMQ is running: docker ps");
++            System.err.println("========================================");
++        }
++    }
++    
++    @Override
++    public void contextDestroyed(ServletContextEvent sce) {
++        try {
++            if (channel != null && channel.isOpen()) {
++                channel.close();
++            }
++            if (connection != null && connection.isOpen()) {
++                connection.close();
++            }
++            System.out.println("RabbitMQ connection closed");
++        } catch (IOException | TimeoutException e) {
++            e.printStackTrace();
++        }
++    }
++}
+diff --git a/service/src/main/java/com/example/websocket/NewsWebSocket.java b/service/src/main/java/com/example/websocket/NewsWebSocket.java
+index c4eeb9d..404f87e 100644
+--- a/service/src/main/java/com/example/websocket/NewsWebSocket.java
++++ b/service/src/main/java/com/example/websocket/NewsWebSocket.java
+@@ -1,56 +1,56 @@
+-package com.example.websocket;
+-
+-import javax.websocket.*;
+-import javax.websocket.server.ServerEndpoint;
+-import java.io.IOException;
+-import java.util.Collections;
+2026-03-12T03:11:48.490Z [INFO] 
+-import java.util.HashSet;
+-import java.util.Set;
+-
+-@ServerEndpoint("/news-websocket")
+-public class NewsWebSocket {
+-    
+-    private static Set<Session> sessions = Collections.synchronizedSet(new HashSet<>());
+-    
+-    @OnOpen
+-    public void onOpen(Session session) {
+-        sessions.add(session);
+-        System.out.println("WebSocket opened: " + session.getId());
+-    }
+-    
+-    @OnClose
+-    public void onClose(Session session) {
+-        sessions.remove(session);
+-        System.out.println("WebSocket closed: " + session.getId());
+-    }
+-    
+-    @OnError
+-    public void onError(Session session, Throwable throwable) {
+-        System.err.println("WebSocket error: " + throwable.getMessage());
+-        throwable.printStackTrace();
+-    }
+-    
+-    @OnMessage
+-    public void onMessage(String message, Session session) {
+-        System.out.println("Received message from client: " + message);
+-    }
+-    
+-    /**
+-     * Broadcast message to all connected WebSocket clients
+-     */
+-    public static void broadcast(String message) {
+-        synchronized (sessions) {
+-            for (Session session : sessions) {
+-                if (session.isOpen()) {
+-                    try {
+-                        session.getBasicRemote().sendText(message);
+-                    } catch (IOException e) {
+-                        e.printStackTrace();
+-                        System.err.println("Error sending message to session " + session.getId());
+-                    }
+-                }
+-            }
+-        }
+-        System.out.println("Broadcasted to " + sessions.size() + " clients: " + message);
+-    }
+-}
++package com.example.websocket;
++
++import jakarta.websocket.*;
++import jakarta.websocket.server.ServerEndpoint;
++import java.io.IOException;
++import java.util.Collections;
++import java.util.HashSet;
++import java.util.Set;
++
++@ServerEndpoint("/news-websocket")
++public class NewsWebSocket {
++    
++    private static Set<Session> sessions = Collections.synchronizedSet(new HashSet<>());
++    
++    @OnOpen
++    public void onOpen(Session session) {
++        sessions.add(session);
++        System.out.println("WebSocket opened: " + session.getId());
++    }
++    
++    @OnClose
++    public void onClose(Session session) {
++        sessions.remove(session);
++        System.out.println("WebSocket closed: " + session.getId());
++    }
++    
++    @OnError
++    public void onError(Session session, Throwable throwable) {
++        System.err.println("WebSocket error: " + throwable.getMessage());
++        throwable.printStackTrace();
++    }
++    
++    @OnMessage
++    public void onMessage(String message, Session session) {
++        System.out.println("Received message from client: " + message);
++    }
++    
++    /**
++     * Broadcast message to all connected WebSocket clients
++     */
++    public static void broadcast(String message) {
++        synchronized (sessions) {
++            for (Session session : sessions) {
++                if (session.isOpen()) {
++                    try {
++                        session.getBasicRemote().sendText(message);
++                    } catch (IOException e) {
++                        e.printStackTrace();
++                        System.err.println("Error sending message to session " + session.getId());
++                    }
++                }
++            }
++        }
++        System.out.println("Broadcasted to " + sessions.size() + " clients: " + message);
++    }
++}
+diff --git a/service/src/main/webapp/WEB-INF/web.xml b/service/src/main/webapp/WEB-INF/web.xml
+index 5a86574..5127487 100644
+--- a/service/src/main/webapp/WEB-INF/web.xml
++++ b/service/src/main/webapp/WEB-INF/web.xml
+@@ -1,9 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
++<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+-         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+-         version="3.1">
++         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
++         version="6.0">
+   <display-name>RabbitMQ News Feed Application</display-name>
+   
+   <listener>
+
+2026-03-12T03:11:48.491Z [INFO] [unknown]: getting broken files...
+2026-03-12T03:11:48.491Z [INFO] [unknown]: found 0 broken files.
+2026-03-12T03:11:48.491Z [INFO] [unknown]: there are 420 lines.
+2026-03-12T03:11:48.974Z [INFO] [unknown]: there are 3679 tokens.
+2026-03-12T03:11:48.974Z [INFO] [unknown]: no need to split the diff file.
+2026-03-12T03:11:48.974Z [INFO] summarizing behavior changes...
+2026-03-12T03:11:48.974Z [INFO] summarizing behavior changes of part 1...
+2026-03-12T03:11:48.978Z [INFO] summarized behavior changes of part 1.
+2026-03-12T03:11:48.978Z [INFO] summarized behavior changes of all parts.
+2026-03-12T03:11:48.978Z [INFO] summarizing behavior changes...
+2026-03-12T03:11:48.978Z [INFO] summarizing behavior changes of part 1...
+2026-03-12T03:11:48.980Z [INFO] summarized behavior changes of part 1.
+2026-03-12T03:11:48.980Z [INFO] summarized behavior changes of all parts.
+2026-03-12T03:11:48.980Z [INFO] summarizing behavior changes...
+2026-03-12T03:11:48.980Z [INFO] summarizing behavior changes of part 1...
+2026-03-12T03:11:48.983Z [INFO] summarized behavior changes of part 1.
+2026-03-12T03:11:48.983Z [INFO] summarized behavior changes of all parts.

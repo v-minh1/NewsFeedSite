@@ -1,0 +1,11 @@
+2026-03-12T03:11:29.374Z [INFO] [Task.commitChanges](6.2): Committing changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: fix issues
+2026-03-12T03:11:29.396Z [INFO] [copilot/execute-modernization-plan 5f85ac8] fix issues
+ 2 files changed, 144 insertions(+), 144 deletions(-)
+
+2026-03-12T03:11:29.403Z [INFO] 5f85ac8fc7becb7f13ff421b2e8599d0f22c3747
+
+2026-03-12T03:11:29.413Z [INFO] 4	4	client/pom.xml
+88	88	service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
+56	56	service/src/main/java/com/example/websocket/NewsWebSocket.java
+
+2026-03-12T03:11:29.420Z [INFO] [Task.commitChanges](6.2): Committed changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: fix issues

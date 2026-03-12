@@ -1,0 +1,20 @@
+2026-03-12T03:11:29.423Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-03-12T03:11:29.423Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: /usr/share/apache-maven-3.9.12
+Java version: 21.0.10, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-21-jdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.14.0-1017-azure", arch: "amd64", family: "unix"
+2026-03-12T03:11:29.653Z [INFO] [BaseBuildTool] New version of mvn: 3.9.12 -> 3.9.12
+2026-03-12T03:11:29.653Z [INFO] [MavenBuildTool] Getting Java version of /home/runner/work/NewsFeedSite/NewsFeedSite/service from pom.xml
+2026-03-12T03:11:29.653Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/runner/work/NewsFeedSite/NewsFeedSite/service
+2026-03-12T03:11:29.653Z [INFO] [MavenBuildTool] Found pom.xml files: /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml
+2026-03-12T03:11:29.654Z [INFO] [MavenBuildTool] Java version found in /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml: 21
+2026-03-12T03:11:29.654Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-03-12T03:11:29.654Z [INFO] Running tests...
+2026-03-12T03:11:29.654Z [INFO] [MavenBuildTool] Running test cases of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:29.654Z [INFO] [Environment] Running command (Java 21): mvn clean test -q -B -fn
+2026-03-12T03:11:33.793Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-03-12T03:11:33.797Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-03-12T03:11:33.797Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:11:33.797Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn

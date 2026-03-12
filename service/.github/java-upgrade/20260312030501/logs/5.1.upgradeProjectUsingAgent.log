@@ -1,0 +1,13 @@
+2026-03-12T03:08:34.954Z [INFO] [Task.commitChanges](5.1): Committing changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: Upgrade Java 17 to 21, migrate javax.* to jakarta.*, update Maven plugins and Jetty plugin to support Jakarta EE and Java 21
+2026-03-12T03:08:34.978Z [INFO] [copilot/execute-modernization-plan 1184f4f] Upgrade Java 17 to 21, migrate javax.* to jakarta.*, update Maven plugins and Jetty plugin to support Jakarta EE and Java 21
+ 4 files changed, 21 insertions(+), 22 deletions(-)
+
+2026-03-12T03:08:34.986Z [INFO] 1184f4f9ee1a62971ac1a801ce5e0cae6bee1772
+
+2026-03-12T03:08:34.996Z [INFO] 4	4	client/pom.xml
+13	13	service/pom.xml
+3	3	service/src/main/java/com/example/rabbitmq/RabbitMQConsumer.java
+2	2	service/src/main/java/com/example/websocket/NewsWebSocket.java
+3	4	service/src/main/webapp/WEB-INF/web.xml
+
+2026-03-12T03:08:35.004Z [INFO] [Task.commitChanges](5.1): Committed changes for /home/runner/work/NewsFeedSite/NewsFeedSite/service with message: Upgrade Java 17 to 21, migrate javax.* to jakarta.*, update Maven plugins and Jetty plugin to support Jakarta EE and Java 21

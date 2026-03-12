@@ -1,0 +1,93 @@
+2026-03-12T03:08:35.006Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-03-12T03:08:35.006Z [INFO] [Environment] Running command (Java 17): mvn --version
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: /usr/share/apache-maven-3.9.12
+Java version: 17.0.18, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-17-jdk-amd64
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "6.14.0-1017-azure", arch: "amd64", family: "unix"
+2026-03-12T03:08:35.225Z [INFO] [BaseBuildTool] New version of mvn: 3.9.12 -> 3.9.12
+2026-03-12T03:08:35.225Z [INFO] [MavenBuildTool] Getting Java version of /home/runner/work/NewsFeedSite/NewsFeedSite/service from pom.xml
+2026-03-12T03:08:35.225Z [INFO] [MavenBuildTool] Searching for pom.xml files in /home/runner/work/NewsFeedSite/NewsFeedSite/service
+2026-03-12T03:08:35.225Z [INFO] [MavenBuildTool] Found pom.xml files: /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml
+2026-03-12T03:08:35.226Z [INFO] [MavenBuildTool] Java version found in /home/runner/work/NewsFeedSite/NewsFeedSite/service/pom.xml: 21
+2026-03-12T03:08:35.226Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-03-12T03:08:35.226Z [INFO] [MavenBuildTool] Getting build errors of /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:08:35.226Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+[ERROR] COMPILATION ERROR : 
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[13,24] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[16,24] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[22,25] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[28,25] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[34,43] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[3,1] package jakarta.websocket does not exist
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[15,6] cannot find symbol
+  symbol:   class OnOpen
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[21,6] cannot find symbol
+  symbol:   class OnClose
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[27,6] cannot find symbol
+  symbol:   class OnError
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[33,6] cannot find symbol
+  symbol:   class OnMessage
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[43,18] cannot find symbol
+  symbol:   class Session
+  location: class com.example.websocket.NewsWebSocket
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project demo: Compilation failure: Compilation failure: 
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[13,24] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[16,24] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[22,25] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[28,25] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[34,43] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[3,1] package jakarta.websocket does not exist
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[15,6] cannot find symbol
+[ERROR]   symbol:   class OnOpen
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[21,6] cannot find symbol
+[ERROR]   symbol:   class OnClose
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[27,6] cannot find symbol
+[ERROR]   symbol:   class OnError
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class OnMessage
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] /home/runner/work/NewsFeedSite/NewsFeedSite/service/src/main/java/com/example/websocket/NewsWebSocket.java:[43,18] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class com.example.websocket.NewsWebSocket
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+2026-03-12T03:08:40.523Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-03-12T03:08:40.523Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-03-12T03:08:40.525Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-12T03:08:40.525Z [INFO] [MavenBuildTool] Cleaning /home/runner/work/NewsFeedSite/NewsFeedSite/service using Maven
+2026-03-12T03:08:40.525Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-03-12T03:08:41.976Z [INFO] Build project completed. Looking for next task...
+2026-03-12T03:08:41.976Z [INFO] Build project failed with 11 errors. The next task is to ask Agent to fix build errors.
