@@ -22,7 +22,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "completed"
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": null,
+        "generateNewIntegrationTests": null,
+        "passUnitTests": "true",
+        "passIntegrationTests": null,
+        "securityComplianceCheck": null
+      },
+      "status": "success",
+      "taskSummary": "Successfully upgraded Java from 17 to 21 and migrated javax.* to jakarta.* namespace. Updated service/pom.xml: compiler source/target to 21, javax.websocket to jakarta.websocket-client-api:2.2.0 and jakarta.websocket-api:2.2.0, javax.servlet-api to jakarta.servlet-api:6.1.0, Jetty plugin from jetty-maven-plugin:9.4.48 to jetty-ee10-maven-plugin:12.0.21, maven-surefire-plugin to 3.2.5. Updated client/pom.xml: Java 21, compiler plugin 3.13.0, surefire 3.2.5. Migrated NewsWebSocket.java and RabbitMQConsumer.java from javax to jakarta imports. Updated web.xml to Jakarta EE namespace. Build passed and unit tests passed."
     }
   ],
   "metadata": {
